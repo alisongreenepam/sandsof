@@ -1,0 +1,1 @@
+(function(){"use strict";"modern";function update(){$(".zoom").each(function(){var zoom=$(this).data("elevateZoom");zoom&&(zoom.zoomContainer.remove(),zoom.startZoom())})}$(".zoom").elevateZoom({zoomType:"inner",cursor:"crosshair",zoomWindowFadeIn:350,zoomWindowFadeOut:500}),$(window).on("resize orientationchange",update)}).call(this);
